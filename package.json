@@ -1,0 +1,24 @@
+{
+  "name": "ywc-cli",
+  "version": "1.0.4",
+  "description": "",
+  "main": "cli.js",
+  "bin": {
+    "ywc-cli": "./cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ywc",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^8.2.0",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^8.2.0",
+    "ora": "^4.0.4",
+    "ncp": "^2.0.0",
+    "consolidate": "^0.16.0"
+  },
+  "devDependencies": {
+  }
+}
