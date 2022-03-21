@@ -9,6 +9,10 @@ const waitFnLoading = async(fn,message,...args) => {
     return repos
 }
 
+// 临时下载目录
+const downloadDirectory = `${process.env[process.platform === 'win32'? 'USERPROFILE' : 'HOME']}/.template`;
+
 module.exports = {
-    waitFnLoading: waitFnLoading
+    waitFnLoading,
+    downloadDirectory
 }

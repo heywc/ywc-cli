@@ -19,6 +19,5 @@
     "ncp": "^2.0.0",
     "consolidate": "^0.16.0"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }

@@ -35,7 +35,7 @@ Reflect.ownKeys(mapActions).forEach(action => {
             }
         })
 });
-
+// 帮助
 program.on('--help', () => {
     console.log('\nExamples:');
     Reflect.ownKeys(mapActions).forEach(action => {
