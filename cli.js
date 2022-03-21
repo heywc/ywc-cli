@@ -3,6 +3,8 @@
 const commander = require('commander')
 const program = new commander.Command()
 const path = require('path');
+
+// 配置指令
 const mapActions = {
     create: {
         alias: 'c',
@@ -11,14 +13,6 @@ const mapActions = {
             'ywc-cli create <project-name>'
         ]
     },
-    // config: {
-    //     alias: 'conf',
-    //     description: 'config project variable',
-    //     examples: [
-    //         'ywc-cli config set <k><v>',
-    //         'ywc-cli config get <k>'
-    //     ]
-    // },
     '*':{
         alias: '',
         description: 'command not found',
@@ -26,6 +20,7 @@ const mapActions = {
     }
 }
 
+// 执行指令
 Reflect.ownKeys(mapActions).forEach(action => {
     program
         .command(action) // 配置指令名字
@@ -35,7 +30,7 @@ Reflect.ownKeys(mapActions).forEach(action => {
             if(action === '*') {
                 console.log(mapActions[action].description);
             } else {
-                // yu-cli create xxx  [node, yu-cli, create, xxx]
+                // ywc-cli create xxx  [node, ywc-cli, create, xxx]
                 require(path.resolve(__dirname,'lib',action))(...process.argv.slice(3));
             }
         })
