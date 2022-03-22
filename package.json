@@ -1,15 +1,20 @@
 {
   "name": "ywc-cli",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "cli.js",
   "bin": {
-    "ywc-cli": "./cli.js"
+    "ywc-cli": "./cli.js",
+    "ywc": "./cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ywc",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:1842347744/ywc-cli.git"
+  },
   "license": "ISC",
   "dependencies": {
     "commander": "^8.2.0",

@@ -10,4 +10,14 @@ If you are a senior engineer, you can save a lot of time in creating projects th
 
 ` c/create ` 
 
-ywc-cli c/create project
+```
+  ywc-cli c/create project
+
+  or 
+
+  ywc c project
+
+```
+## benefit
+
+You can quickly build projects by selecting templates
