@@ -10,8 +10,17 @@ const mapActions = {
         alias: 'c',
         description:'create a project',
         examples: [
-            'ywc-cli create <project-name>'
+            'ywc-cli create <project-name>',
+            'ywc c <project-name>'
         ]
+    },
+    version: {
+        alias: 'v',
+        description:'get version of ywc-cli',
+        examples: [
+            'ywc-cli v',
+            'ywc v'
+        ] 
     },
     '*':{
         alias: '',
@@ -30,8 +39,11 @@ Reflect.ownKeys(mapActions).forEach(action => {
             if(action === '*') {
                 console.log(mapActions[action].description);
             } else {
-                // ywc-cli create xxx  [node, ywc-cli, create, xxx]
-                require(path.resolve(__dirname,'lib',action))(...process.argv.slice(3));
+                // 例如 ywc-cli create xxx  [node, ywc-cli, create, xxx]
+                if(process.argv.length > 3) require(path.resolve(__dirname,'lib',action))(...process.argv.slice(3))
+                else {
+                    require(path.resolve(__dirname,'lib',action))
+                }
             }
         })
 });

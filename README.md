@@ -1,23 +1,47 @@
 # ywc-cli
 
-This is a tool to improve the efficiency of project development
+## introduce
+
+This is a tool to improve the development efficiency of Vue project
 
 If you are a novice, you can use this tool to build projects without obstacles
 
 If you are a senior engineer, you can save a lot of time in creating projects through this tool
 
-## command
+## Start
 
-` c/create ` 
+Install this package globally 
+
+`npm i ywc-cli -g`
+
+Then execute the script in the target folder
+
+`ywc c project`
+
+## Command
+
+`create` 创建项目
 
 ```
-  ywc-cli c/create project
-
-  or 
+  ywc-cli create/c project
 
   ywc c project
+```
+
+`version` 查看当前版本号
 
 ```
-## benefit
+  ywc-cli version
+
+  ywc v
+```
+`--help` 获取帮助
+
+```
+  ywc-cli --help
+
+  ywc --help
+```
+## Benefit
 
 You can quickly build projects by selecting templates
