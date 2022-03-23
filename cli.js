@@ -14,14 +14,14 @@ const mapActions = {
             'ywc c <project-name>'
         ]
     },
-    version: {
-        alias: 'v',
-        description:'get version of ywc-cli',
-        examples: [
-            'ywc-cli v',
-            'ywc v'
-        ] 
-    },
+    // version: {
+    //     alias: 'v',
+    //     description:'get version of ywc-cli',
+    //     examples: [
+    //         'ywc-cli v',
+    //         'ywc v'
+    //     ] 
+    // },
     '*':{
         alias: '',
         description: 'command not found',
@@ -56,5 +56,7 @@ program.on('--help', () => {
         })
     });
 })
+// 版本
+program.version('1.0.8');
 
 program.parse();
