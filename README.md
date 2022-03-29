@@ -23,24 +23,24 @@ Then execute the script in the target folder
 `create` 创建项目
 
 ```
-  ywc-cli create/c project
+ywc-cli create/c project
 
-  ywc c project
+ywc c project
 ```
 
 `version` 查看当前版本号
 
 ```
-  ywc-cli version
+ywc-cli --version
 
-  ywc v
+ywc -V
 ```
 `--help` 获取帮助
 
 ```
-  ywc-cli --help
+ywc-cli --help
 
-  ywc --help
+ywc --help
 ```
 ## Benefit
 
