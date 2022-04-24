@@ -13,7 +13,7 @@
   "author": "ywc",
   "repository": {
     "type": "git",
-    "url": "git@github.com:1842347744/ywc-cli.git"
+    "url": "git@github.com:heywc/ywc-cli.git"
   },
   "license": "ISC",
   "dependencies": {
